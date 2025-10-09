@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ## Run
 Execute the following steps in the same environment:
 ```
-cd Mood-Risk & python main.py
+cd Mood-Risk & python Mood-Risk.py
 ```
 
 ## Dataset Format
