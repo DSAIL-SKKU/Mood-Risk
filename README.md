@@ -18,6 +18,16 @@ cd Mood-Risk & python main.py
 ## Dataset Format
 Processed dataset format should be a DataFrame as a .pkl file having the following columns:
 
+1. user_id : unique user id
+2. post_id : unique post id
+3. past_6_su : suicidality(e.g., indicator) type
+4. body_pre : original post
+5. mh_diag : diagnosis type 0(MDD) and 1(BD)
+6. time : unique posting time
+7. fu_30_su : suicidality after 30 days
+8. mh_prob : diagnosis probability (e.g., 0(MDD), 1(BD)
+9. sum_w_mh : summarziation data with mental health
+
 ## Annotation Process
 To label the collected Reddit dataset, we recruited three researchers, who are knowledgeable in psychology and fluent in English, as annotators. With the supervision of a psychiatrist, the trained annotators labeled 794 users and their 4,278 anonymized Reddit posts using the open-source text annotation tool Doccano. During annotations, we mainly consider two different label categories: (i) Mental disorder diagnosis type (e.g., MDD, BD) and (ii) suicidality levels (e.g., ideation, attempt). If there is any conflict in the annotated labels across the annotators, all the annotators discuss and reach to an agreement under the supervision of the psychiatrists. 
 
