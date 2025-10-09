@@ -45,7 +45,7 @@ While it is important to ensure that all necessary precautions are taken, we are
 
 The dataset was produced at Sungkyunkwan University (SKKU) in South Korea. This exemption applies to the analysis of pre-existing data that is publicly accessible or involves individuals who cannot be directly identified or linked to identifiable information. Nevertheless, due to the potentially sensitive nature of this data, we require that researchers who receive the data obtain ethical approval from their respective organizations.
 
-Please submit your access request to Daeun Lee (delee12@skku.edu) and ensure that you include all the necessary information and address the points outlined in the sample application.
+Please submit your access request to Daeun Lee (da-eun.lee@yale.edu) and ensure that you include all the necessary information and address the points outlined in the sample application.
 
 
 ## Dataset Availability and Governance Plan
