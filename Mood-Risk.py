@@ -71,7 +71,7 @@ def main(config):
 
     result_save = config['result_save']
     
-    df =pd.read_json('~/hyolim/JMIR_2024/_Data/240719_data/240803_df_embedding_processed_concat_8736.json')
+    df =pd.read_json('sample_df.json')
     output_dict = {}
     df['prob'] = df['prob'].apply(string_to_rounded_list)
     df['time'] = df['time'].apply(lambda x: pd.to_datetime(x, unit='ms'))
@@ -164,7 +164,7 @@ Choose one of [suicide risk].
 
     # Result Save
     save_time = datetime.now().__format__("%m%d_%H%M%S%Z") #$ 
-    save_path = f"/home/dsail/hyolim/JMIR_2024/_Baseline/suicide_risk/ollama/_Result/rag/{result_save}/{model}/"
+    save_path = f"/home/_Result/rag/{result_save}/{model}/"
     Path(f"{save_path}").mkdir(parents=True, exist_ok=True)
     pd.DataFrame(df_make).to_json(f'{save_path}/{save_time}_{model}_rag_{result_save}.json')  
 
