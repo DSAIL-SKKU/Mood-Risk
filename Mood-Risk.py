@@ -164,15 +164,15 @@ Choose one of [suicide risk].
 
     # Result Save
     save_time = datetime.now().__format__("%m%d_%H%M%S%Z") #$ 
-    save_path = f"/home/_Result/rag/{result_save}/{model}/"
+    save_path = f"/home/_Result/{result_save}/{model}/"
     Path(f"{save_path}").mkdir(parents=True, exist_ok=True)
     pd.DataFrame(df_make).to_json(f'{save_path}/{save_time}_{model}_rag_{result_save}.json')  
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser("main.py", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--model",type=str, default='phi3:latest')#'vitorcalvi/mentallama2') # 
-    parser.add_argument("--token_limit", type=int, default=4096)# -> 3910 / 2048 ->1860 / 4000 -> 3820
-    parser.add_argument("--random_state", type=int, default=2023)#
+    parser.add_argument("--model",type=str, default='phi3:latest')
+    parser.add_argument("--token_limit", type=int, default=4096)
+    parser.add_argument("--random_state", type=int, default=2023)
     parser.add_argument("--max_tok", type=int, default=500) # llm inference length
     parser.add_argument("--result_save", type=int, default=30)# zeroshot, rag, fewshot
     config = parser.parse_args()
